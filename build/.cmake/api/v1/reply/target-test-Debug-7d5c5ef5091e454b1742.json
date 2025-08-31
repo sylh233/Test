@@ -15,6 +15,7 @@
 		[
 			"add_executable",
 			"link_directories",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -41,6 +42,12 @@
 			{
 				"command" : 2,
 				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 5,
 				"parent" : 0
 			}
@@ -58,7 +65,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "Y:/Cpp_work/proj_Test/inc"
 				}
 			],
@@ -92,16 +99,8 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-Bstatic",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 1,
+				"backtrace" : 3,
 				"fragment" : "-lmathf",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-Wl,-Bdynamic",
 				"role" : "libraries"
 			},
 			{
