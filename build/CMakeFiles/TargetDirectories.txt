@@ -1,3 +1,4 @@
-Y:/Cpp_work/proj_Test/build/CMakeFiles/test.dir
-Y:/Cpp_work/proj_Test/build/CMakeFiles/edit_cache.dir
-Y:/Cpp_work/proj_Test/build/CMakeFiles/rebuild_cache.dir
+C:/works/cpp_work/proj_Test/build/CMakeFiles/mathf.dir
+C:/works/cpp_work/proj_Test/build/CMakeFiles/test.dir
+C:/works/cpp_work/proj_Test/build/CMakeFiles/edit_cache.dir
+C:/works/cpp_work/proj_Test/build/CMakeFiles/rebuild_cache.dir

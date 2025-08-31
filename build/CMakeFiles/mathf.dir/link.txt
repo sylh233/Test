@@ -1,0 +1,2 @@
+C:\tools\mingw64\bin\ar.exe qc C:\works\cpp_work\proj_Test\lib\libmathf.a CMakeFiles/mathf.dir/test/mathfFunc.cpp.obj
+C:\tools\mingw64\bin\ranlib.exe C:\works\cpp_work\proj_Test\lib\libmathf.a

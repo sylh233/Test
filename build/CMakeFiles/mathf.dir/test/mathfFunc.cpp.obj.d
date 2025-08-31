@@ -1,5 +1,5 @@
-CMakeFiles/test.dir/src/testmain.cpp.obj: \
- C:\works\cpp_work\proj_Test\src\testmain.cpp \
+CMakeFiles/mathf.dir/test/mathfFunc.cpp.obj: \
+ C:\works\cpp_work\proj_Test\test\mathfFunc.cpp \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -125,4 +125,6 @@ CMakeFiles/test.dir/src/testmain.cpp.obj: \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
  C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+ C:/tools/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
+ C:/tools/mingw64/x86_64-w64-mingw32/include/math.h \
  C:/works/cpp_work/proj_Test/inc/mathf.h

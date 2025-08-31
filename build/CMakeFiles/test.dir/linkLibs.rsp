@@ -1,1 +1,1 @@
-  -LY:/Cpp_work/proj_Test/lib  -lmathf -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LC:/works/cpp_work/proj_Test/lib  C:/works/cpp_work/proj_Test/lib/libmathf.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

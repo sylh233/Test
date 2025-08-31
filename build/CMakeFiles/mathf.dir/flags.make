@@ -4,7 +4,7 @@
 # compile CXX with C:/tools/mingw64/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/test.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/mathf.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -std=gnu++11
 

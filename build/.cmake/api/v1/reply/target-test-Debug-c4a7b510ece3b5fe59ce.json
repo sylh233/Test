@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Y:/Cpp_work/proj_Test/out/test.exe"
+			"path" : "C:/works/cpp_work/proj_Test/out/test.exe"
 		},
 		{
-			"path" : "Y:/Cpp_work/proj_Test/out/test.pdb"
+			"path" : "C:/works/cpp_work/proj_Test/out/test.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,6 @@
 		[
 			"add_executable",
 			"link_directories",
-			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -30,23 +29,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 10,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
-				"file" : 0,
-				"line" : 14,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
 				"file" : 0,
 				"line" : 5,
 				"parent" : 0
@@ -65,8 +58,8 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "Y:/Cpp_work/proj_Test/inc"
+					"backtrace" : 3,
+					"path" : "C:/works/cpp_work/proj_Test/inc"
 				}
 			],
 			"language" : "CXX",
@@ -84,6 +77,13 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 1,
+			"id" : "mathf::@6890427a1f51a3e7e1df"
+		}
+	],
 	"id" : "test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
@@ -95,12 +95,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LY:\\Cpp_work\\proj_Test\\lib",
+				"fragment" : "-LC:\\works\\cpp_work\\proj_Test\\lib",
 				"role" : "libraryPath"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lmathf",
+				"backtrace" : 1,
+				"fragment" : "C:\\works\\cpp_work\\proj_Test\\lib\\libmathf.a",
 				"role" : "libraries"
 			},
 			{

@@ -9,7 +9,7 @@ private:
     int index = 1;//开几次方根
     void reduce_frac();
 public:
-    mathf(int,int,int);
+    mathf(int = 0,int = 1,int = 1);
     double value();
     void print();
 };

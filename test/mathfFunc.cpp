@@ -2,7 +2,7 @@
 #include <cmath>
 
 #include "mathf.h"
-
+using namespace std;
 mathf::mathf(int n,int d,int i)
 {
     nume = n;
@@ -39,7 +39,6 @@ void mathf::print()//打印值
 
 void mathf::reduce_frac()//约分分式
 {
-    using std::cout;
     int a=nume>deno?nume:deno,//较大值
     b=nume<deno?nume:deno;//较小值
     int c = a%b;
@@ -47,6 +46,8 @@ void mathf::reduce_frac()//约分分式
         {
             a=b;b=c;c=a%b;
         }
-    if(c)
-        nume/=c;deno/=c;
+    if(b)
+    {   
+        nume/=b;deno/=b;
+    }
 }

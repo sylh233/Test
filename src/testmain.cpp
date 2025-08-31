@@ -5,9 +5,8 @@
 int main()
 {   
     using namespace std;
-    mathf test(1,2,2);
+    mathf test = mathf(8,2);
     test.print();
-    double d = test.value();
-    cout << d;
+    cout << endl << test.value();
     return 0;
 }

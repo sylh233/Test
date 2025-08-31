@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = Y:\CMake\bin\cmake.exe
+CMAKE_COMMAND = C:\tools\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = Y:\CMake\bin\cmake.exe -E rm -f
+RM = C:\tools\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = Y:\Cpp_work\proj_Test
+CMAKE_SOURCE_DIR = C:\works\cpp_work\proj_Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = Y:\Cpp_work\proj_Test\build
+CMAKE_BINARY_DIR = C:\works\cpp_work\proj_Test\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = Y:\Cpp_work\proj_Test\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	Y:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\tools\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	Y:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\tools\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,16 +86,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start Y:\Cpp_work\proj_Test\build\CMakeFiles Y:\Cpp_work\proj_Test\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\works\cpp_work\proj_Test\build\CMakeFiles C:\works\cpp_work\proj_Test\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start Y:\Cpp_work\proj_Test\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\works\cpp_work\proj_Test\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start Y:\Cpp_work\proj_Test\build\CMakeFiles Y:\Cpp_work\proj_Test\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\works\cpp_work\proj_Test\build\CMakeFiles C:\works\cpp_work\proj_Test\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start Y:\Cpp_work\proj_Test\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\works\cpp_work\proj_Test\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -121,6 +121,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named mathf
+
+# Build rule for target.
+mathf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mathf
+.PHONY : mathf
+
+# fast build rule for target.
+mathf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mathf.dir\build.make CMakeFiles/mathf.dir/build
+.PHONY : mathf/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -159,6 +172,30 @@ src/testmain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/testmain.cpp.s
 .PHONY : src/testmain.cpp.s
 
+test/mathfFunc.obj: test/mathfFunc.cpp.obj
+.PHONY : test/mathfFunc.obj
+
+# target to build an object file
+test/mathfFunc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mathf.dir\build.make CMakeFiles/mathf.dir/test/mathfFunc.cpp.obj
+.PHONY : test/mathfFunc.cpp.obj
+
+test/mathfFunc.i: test/mathfFunc.cpp.i
+.PHONY : test/mathfFunc.i
+
+# target to preprocess a source file
+test/mathfFunc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mathf.dir\build.make CMakeFiles/mathf.dir/test/mathfFunc.cpp.i
+.PHONY : test/mathfFunc.cpp.i
+
+test/mathfFunc.s: test/mathfFunc.cpp.s
+.PHONY : test/mathfFunc.s
+
+# target to generate assembly for a file
+test/mathfFunc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mathf.dir\build.make CMakeFiles/mathf.dir/test/mathfFunc.cpp.s
+.PHONY : test/mathfFunc.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -168,10 +205,14 @@ help:
 	@echo ... codegen
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... mathf
 	@echo ... test
 	@echo ... src/testmain.obj
 	@echo ... src/testmain.i
 	@echo ... src/testmain.s
+	@echo ... test/mathfFunc.obj
+	@echo ... test/mathfFunc.i
+	@echo ... test/mathfFunc.s
 .PHONY : help
 
 
